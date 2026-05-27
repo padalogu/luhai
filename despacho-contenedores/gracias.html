@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Gracias por tu registro! | Luhai</title>
+  <!-- Meta tags para SEO -->
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Google Fonts: Montserrat e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Configuración personalizada de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#001030',       // Azul marino
+              teal: '#00A499',       // Verde azulado/teal
+              orange: '#F58220',     // Naranja
+              blue: '#0070c0',       // Azul brillante
+              lightBg: '#f8fafc',
+            },
+            textNavy: '#001845',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos de Animación Personalizados -->
+  <style type="text/css">
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes drawCheck {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .animate-idle-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .check-svg path {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: drawCheck 0.8s 0.3s ease-in-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-navy text-slate-200 font-sans antialiased selection:bg-brand-teal selection:text-white min-h-screen flex flex-col justify-between relative overflow-hidden">
+
+  <!-- Decoración de Red en la esquina superior derecha -->
+  <div class="absolute -top-16 -right-16 sm:-top-24 sm:-right-24 md:-top-32 md:-right-32 lg:-top-40 lg:-right-40 w-[280px] sm:w-[380px] md:w-[450px] lg:w-[550px] pointer-events-none select-none z-0 opacity-40">
+    <img src="img/Grupo 232.png" alt="Decoración de red" class="w-full h-auto object-contain">
+  </div>
+
+  <!-- Decoración de Red en la esquina inferior izquierda -->
+  <div class="absolute -bottom-16 -left-16 sm:-bottom-24 sm:-left-24 md:-bottom-32 md:-left-32 lg:-bottom-40 lg:-left-40 w-[280px] sm:w-[380px] md:w-[450px] lg:w-[550px] pointer-events-none select-none z-0 opacity-40">
+    <img src="img/Grupo 233.png" alt="Decoración de red" class="w-full h-auto object-contain">
+  </div>
+
+  <!-- Header / Logo -->
+  <header class="w-full max-w-7xl mx-auto px-6 py-8 relative z-10 flex justify-center sm:justify-start">
+    <a href="index.html" class="opacity-0 animate-fade-in">
+      <img src="img/Grupo 1.png" alt="Luhai Servicios Aduanales" class="h-16 w-auto object-contain transition-transform duration-300 hover:scale-105">
+    </a>
+  </header>
+
+  <!-- Contenido Central -->
+  <main class="flex-grow flex items-center justify-center px-6 relative z-10 my-12">
+    <div class="max-w-2xl text-center space-y-8 bg-slate-950/40 backdrop-blur-md border border-slate-900/60 p-8 sm:p-12 rounded-3xl shadow-2xl opacity-0 animate-fade-in-up">
+      
+      <!-- Icono de Éxito -->
+      <div class="mx-auto w-20 h-20 rounded-full bg-brand-teal/10 flex items-center justify-center border border-brand-teal/30">
+        <svg class="w-10 h-10 text-brand-teal check-svg" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+
+      <!-- Títulos y Mensaje Personalizado -->
+      <div class="space-y-4">
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight text-white">
+          ¡Tu solicitud ha sido recibida con éxito!
+        </h1>
+        
+        <p id="thank-you-msg" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-lg mx-auto">
+          Gracias por ponerte en contacto. Un especialista de <span class="text-brand-teal font-semibold">Luhai</span> se comunicará contigo a la brevedad para coordinar la revisión de tus contenedores.
+        </p>
+      </div>
+
+      <!-- Información adicional -->
+      <div class="border-t border-slate-800/80 pt-6 space-y-2">
+        <p class="text-slate-400 text-sm">¿Tienes una urgencia operativa con un contenedor?</p>
+        <p class="text-white font-semibold font-display text-base">
+          Llámanos o escríbenos directamente para acelerar el proceso.
+        </p>
+      </div>
+
+      <!-- Botón de retorno -->
+      <div class="pt-4">
+        <div class="animate-idle-float inline-block">
+          <a href="index.html" class="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-brand-teal hover:bg-[#008f84] text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-brand-teal/40 hover:shadow-xl hover:scale-105 active:scale-95">
+            Volver al inicio
+            <svg class="w-4 h-4 transform -translate-x-0.5 group-hover:-translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-8 border-t border-slate-900/40 relative z-10 bg-slate-950/20">
+    <div class="max-w-7xl mx-auto px-6 text-center text-xs sm:text-sm text-slate-500 font-medium">
+      <span>Luhai © 2026 Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const name = sessionStorage.getItem('leadName');
+      const company = sessionStorage.getItem('leadCompany');
+      
+      if (name) {
+        const msgElement = document.getElementById('thank-you-msg');
+        let personalizedMsg = `¡Gracias, <span class="text-brand-orange font-semibold">${name}</span>! Hemos recibido tu solicitud`;
+        if (company) {
+          personalizedMsg += ` para la empresa <span class="text-white font-semibold">${company}</span>`;
+        }
+        personalizedMsg += `. Un especialista de <span class="text-brand-teal font-semibold">Luhai</span> se comunicará contigo a la brevedad para realizar la revisión inicial de tus contenedores.`;
+        msgElement.innerHTML = personalizedMsg;
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,29 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import Script from "next/script";
 
 export default function TuOperacionPage() {
-  const router = useRouter();
-  const nameInputRef = useRef(null);
-
   const focusFirstField = (e) => {
     e.preventDefault();
-    nameInputRef.current?.focus();
     const formElement = document.getElementById("solicitud-revision");
     formElement?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const name = formData.get("name");
-    const company = formData.get("company");
-    
-    sessionStorage.setItem("leadName", name);
-    sessionStorage.setItem("leadCompany", company);
-    
-    router.push("/tu-operacion-no-puede-depender-de-improvisacion/gracias");
   };
 
   useEffect(() => {
@@ -144,77 +128,25 @@ export default function TuOperacionPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             
             {/* Formulario (Izquierda) */}
-            <div className="lg:col-span-6 bg-white rounded-2xl space-y-6 reveal">
-              <h2 className="font-display font-bold text-2xl sm:text-3xl text-text-navy tracking-tight">
-                Solicita una revisión inicial
-              </h2>
-              
-              <form onSubmit={handleFormSubmit} id="contact-form" className="space-y-4">
-                
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    ref={nameInputRef}
-                    required
-                    placeholder="Nombre"
-                    className="w-full px-4 py-3.5 rounded-lg border border-slate-300 hover:border-slate-400 focus:outline-none focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/20 text-slate-800 placeholder-slate-400 text-sm sm:text-base transition-all duration-300"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="text"
-                    name="company"
-                    required
-                    placeholder="Empresa"
-                    className="w-full px-4 py-3.5 rounded-lg border border-slate-300 hover:border-slate-400 focus:outline-none focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/20 text-slate-800 placeholder-slate-400 text-sm sm:text-base transition-all duration-300"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    placeholder="Correo corporativo"
-                    className="w-full px-4 py-3.5 rounded-lg border border-slate-300 hover:border-slate-400 focus:outline-none focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/20 text-slate-800 placeholder-slate-400 text-sm sm:text-base transition-all duration-300"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    placeholder="Teléfono"
-                    className="w-full px-4 py-3.5 rounded-lg border border-slate-300 hover:border-slate-400 focus:outline-none focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/20 text-slate-800 placeholder-slate-400 text-sm sm:text-base transition-all duration-300"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="text"
-                    name="situation"
-                    required
-                    placeholder="¿Qué situación quieres revisar?"
-                    className="w-full px-4 py-3.5 rounded-lg border border-slate-300 hover:border-slate-400 focus:outline-none focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/20 text-slate-800 placeholder-slate-400 text-sm sm:text-base transition-all duration-300"
-                  />
-                </div>
-
-                <div className="pt-2">
-                  <button
-                    type="submit"
-                    className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-teal hover:bg-[#008f84] text-white font-semibold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 active:scale-95"
-                  >
-                    Habla ahora con un especialista
-                    <svg className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </button>
-                </div>
-
-              </form>
+            <div className="lg:col-span-6 bg-white rounded-2xl reveal min-h-[608px]">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/5L5SMyYYcrn5QotdQpiT"
+                style={{ width: "100%", height: "608px", border: "none", borderRadius: "8px" }}
+                id="inline-5L5SMyYYcrn5QotdQpiT" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="02. Luhai - Landing page Servicios"
+                data-height="608"
+                data-layout-iframe-id="inline-5L5SMyYYcrn5QotdQpiT"
+                data-form-id="5L5SMyYYcrn5QotdQpiT"
+                title="02. Luhai - Landing page Servicios"
+              ></iframe>
+              <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
             </div>
 
             {/* Información (Derecha) */}

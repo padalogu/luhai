@@ -11,6 +11,14 @@ export default function DespachoGraciasPage() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (mounted && typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("config", "AW-16709333097", {
+        page_path: window.location.pathname,
+      });
+    }
+  }, [mounted]);
+
   if (!mounted) {
     return null;
   }

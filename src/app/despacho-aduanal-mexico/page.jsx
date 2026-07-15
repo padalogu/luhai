@@ -56,9 +56,12 @@ export default function TuOperacionPage() {
             {/* Textos (Izquierda) */}
             <div className="lg:col-span-6 space-y-8">
               
-              <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight text-white opacity-0 animate-fade-in-up">
-                <span className="text-brand-orange">Un error</span> en aduana puede <br className="hidden sm:inline" />
-                <span className="text-brand-teal">detener</span> toda tu operación
+              <p className="text-brand-teal font-semibold text-sm sm:text-base uppercase tracking-wider mb-2 opacity-0 animate-fade-in-up">
+                Somos la agencia aduanal que te ayuda a importar con control.
+              </p>
+              <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight text-white opacity-0 animate-fade-in-up pt-1">
+                Agencia aduanal para <br className="hidden sm:inline" />
+                <span className="text-brand-teal">empresas importadoras.</span>
               </h1>
 
               <ul className="space-y-4 text-white text-sm sm:text-base opacity-0 animate-fade-in-up delay-100">
@@ -68,7 +71,9 @@ export default function TuOperacionPage() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </span>
-                  <span className="transition-all duration-300 group-hover:text-slate-100 group-hover:translate-x-1">Mercancia detenida por permisos, NOMs o requisitos no arancelarios</span>
+                  <div className="transition-all duration-300 group-hover:translate-x-1">
+                    <strong className="block text-white font-semibold">Seguimiento operativo especializado.</strong>
+                  </div>
                 </li>
                 <li className="flex items-start gap-3.5 group">
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0070c0] flex items-center justify-center text-white mt-0.5 transition-transform duration-300 group-hover:scale-110">
@@ -76,7 +81,9 @@ export default function TuOperacionPage() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </span>
-                  <span className="transition-all duration-300 group-hover:text-slate-100 group-hover:translate-x-1">Multas, revisiones o PAMA por errores en clasificación arancelaria</span>
+                  <div className="transition-all duration-300 group-hover:translate-x-1">
+                    <strong className="block text-white font-semibold">Clasificación arancelaria y revisión documental.</strong>
+                  </div>
                 </li>
                 <li className="flex items-start gap-3.5 group">
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0070c0] flex items-center justify-center text-white mt-0.5 transition-transform duration-300 group-hover:scale-110">
@@ -84,13 +91,15 @@ export default function TuOperacionPage() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </span>
-                  <span className="transition-all duration-300 group-hover:text-slate-100 group-hover:translate-x-1">Retrasos por saturación en puerto, fallas documentales o falta de seguimiento operativo.</span>
+                  <div className="transition-all duration-300 group-hover:translate-x-1">
+                    <strong className="block text-white font-semibold">Cumplimiento regulatorio y requisitos de importación.</strong>
+                  </div>
                 </li>
               </ul>
 
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed opacity-0 animate-fade-in-up delay-200">
-                Antes de Importar, revisa si tu operación cumple con permisos, clasificación, NOMs y documentación clave.
-              </p>
+              <div className="text-slate-200 text-sm sm:text-base leading-relaxed opacity-0 animate-fade-in-up delay-200">
+                <p>Ayudamos a tu empresa a importar con mayor control, cumplimiento y continuidad operativa desde el primer despacho.</p>
+              </div>
 
               <div className="pt-2 opacity-0 animate-fade-in-up delay-300">
                 <div className="animate-idle-float inline-block">
@@ -98,7 +107,7 @@ export default function TuOperacionPage() {
                     href="#solicitud-revision"
                     className="group inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-brand-teal hover:bg-[#008f84] text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-brand-teal/40 hover:shadow-xl hover:scale-105 active:scale-95 animate-pulse-glow"
                   >
-                    Solicita una revisión inicial
+                    Solicita una asesoría inicial
                     <svg className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -152,44 +161,54 @@ export default function TuOperacionPage() {
             {/* Información (Derecha) */}
             <div className="lg:col-span-6 space-y-8 lg:pt-2">
               
-              <p className="text-slate-700 text-base sm:text-lg leading-relaxed reveal delay-75">
-                Antes de que una importación avance, es clave revisar si tu mercancía, documentación y proceso cumplen con los requisitos necesarios para evitar retenciones, multas o retrasos.
-              </p>
+              <div className="space-y-4 reveal delay-75">
+                <h3 className="font-display font-extrabold text-xl sm:text-2xl text-textNavy leading-snug">
+                  Importar con control comienza mucho antes de la aduana.
+                </h3>
+                <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                  Un despacho aduanal eficiente no depende únicamente del pedimento. Depende de revisar la información correcta, anticipar riesgos y dar seguimiento a cada etapa para evitar que un error afecte toda la operación.
+                </p>
+              </div>
 
-              <ul className="space-y-3.5 text-slate-700 text-sm sm:text-base reveal delay-150">
-                <li className="flex items-center gap-3 group">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
-                    <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </span>
-                  <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Validación de permisos y requisitos no arancelarios.</span>
-                </li>
-                <li className="flex items-center gap-3 group">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
-                    <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </span>
-                  <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Revisión de clasificación arancelaria.</span>
-                </li>
-                <li className="flex items-center gap-3 group">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
-                    <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </span>
-                  <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Cumplimiento de NOMs aplicables.</span>
-                </li>
-                <li className="flex items-center gap-3 group">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
-                    <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </span>
-                  <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Control documental del despacho</span>
-                </li>
-              </ul>
+              <div className="space-y-3 reveal delay-150">
+                <p className="text-brand-navy font-semibold text-sm uppercase tracking-wider">
+                  Con LUHAI obtienes
+                </p>
+                <ul className="space-y-3.5 text-slate-700 text-sm sm:text-base">
+                  <li className="flex items-center gap-3 group">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
+                      <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
+                    <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Menos incidencias documentales.</span>
+                  </li>
+                  <li className="flex items-center gap-3 group">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
+                      <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
+                    <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Mayor visibilidad durante la importación.</span>
+                  </li>
+                  <li className="flex items-center gap-3 group">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
+                      <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
+                    <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Respuesta especializada cuando surge un imprevisto.</span>
+                  </li>
+                  <li className="flex items-center gap-3 group">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-orange flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
+                      <svg className="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
+                    <span className="font-medium text-slate-700 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1">Acompañamiento durante todo el proceso.</span>
+                  </li>
+                </ul>
+              </div>
 
               {/* Bloque Destacado de Texto */}
               <div className="space-y-2 border-t border-slate-200 pt-6 reveal delay-200">
@@ -197,19 +216,19 @@ export default function TuOperacionPage() {
                   <span className="font-extrabold">Tu operación</span> <span className="font-normal">no puede</span> <br />
                   <span className="font-normal">depender de</span> <span className="font-extrabold">improvisación</span>
                 </h3>
-                <p className="text-slate-500 text-sm sm:text-base font-medium">
-                  Mayor control para tus operaciones de importación.
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+                  Cuando cada importación impacta inventario, producción o compromisos comerciales, contar con una agencia aduanal va más allá de cumplir un trámite. Significa trabajar con un equipo que entiende la operación, anticipa riesgos y acompaña cada decisión para que tu empresa mantenga el control.
                 </p>
               </div>
 
               {/* Botón de Acción Secundario (Azul) */}
               <div className="pt-2 reveal delay-300">
                 <a
-                  href="#contact-form"
+                  href="#solicitud-revision"
                   onClick={focusFirstField}
                   className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0070c0] hover:bg-[#005da0] text-white font-semibold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 active:scale-95"
                 >
-                  Habla ahora con un especialista
+                  Solicita una asesoría inicial
                   <svg className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

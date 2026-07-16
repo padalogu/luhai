@@ -42,13 +42,13 @@ export default function Home() {
             >
               <div className="space-y-4">
                 <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-teal bg-brand-teal/10 rounded-full">
-                  Operaciones
+                  Planeación
                 </span>
                 <h2 className="font-display font-bold text-2xl text-white group-hover:text-brand-teal transition-colors">
-                  Despacho de Contenedores
+                  Revisión Pre-Importación
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Evite retrasos y multas. Obtenga control, visibilidad y cumplimiento operativo especializado en aduanas.
+                  Asegúrate de que todo esté listo antes de importar. Valida clasificaciones arancelarias, permisos y documentación para evitar retrasos.
                 </p>
               </div>
               <div className="pt-6 flex items-center text-brand-teal font-semibold text-sm gap-1 group-hover:gap-2 transition-all duration-300">
@@ -66,13 +66,13 @@ export default function Home() {
             >
               <div className="space-y-4">
                 <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-orange bg-brand-orange/10 rounded-full">
-                  Prevención
+                  Operaciones
                 </span>
                 <h2 className="font-display font-bold text-2xl text-white group-hover:text-brand-orange transition-colors">
-                  Control y Prevención
+                  Agencia Aduanal B2B
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Antes de importar, valide si su mercancía y documentación cumplen con todos los requisitos para evitar PAMAs y multas.
+                  Ayudamos a tu empresa a importar con mayor control, cumplimiento y continuidad operativa desde el primer despacho.
                 </p>
               </div>
               <div className="pt-6 flex items-center text-brand-orange font-semibold text-sm gap-1 group-hover:gap-2 transition-all duration-300">

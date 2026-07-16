@@ -56,9 +56,6 @@ export default function TuOperacionPage() {
             {/* Textos (Izquierda) */}
             <div className="lg:col-span-6 space-y-8">
               
-              <p className="text-brand-teal font-semibold text-sm sm:text-base uppercase tracking-wider mb-2 opacity-0 animate-fade-in-up">
-                Somos la agencia aduanal que te ayuda a importar con control.
-              </p>
               <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight text-white opacity-0 animate-fade-in-up pt-1">
                 Agencia aduanal para <br className="hidden sm:inline" />
                 <span className="text-brand-teal">empresas importadoras.</span>

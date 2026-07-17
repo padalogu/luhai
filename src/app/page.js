@@ -37,7 +37,7 @@ export default function Home() {
             
             {/* Card 1 */}
             <Link
-              href="/despacho-contenedores"
+              href="/revision-pre-importacion"
               className="group relative bg-slate-950/40 hover:bg-slate-950/70 border border-slate-900/60 hover:border-brand-teal/50 p-8 rounded-3xl text-left shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between"
             >
               <div className="space-y-4">

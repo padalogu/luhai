@@ -59,7 +59,7 @@ export default function DespachoGraciasPage() {
 
       {/* Header / Logo */}
       <header className="w-full max-w-7xl mx-auto px-6 py-8 relative z-10 flex justify-center sm:justify-start">
-        <Link href="/despacho-contenedores" className="opacity-0 animate-fade-in">
+        <Link href="/revision-pre-importacion" className="opacity-0 animate-fade-in">
           <img src="/img/despacho/Grupo 1.png" alt="Luhai Servicios Aduanales" className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
         </Link>
       </header>
@@ -97,7 +97,7 @@ export default function DespachoGraciasPage() {
           {/* Botón de retorno */}
           <div className="pt-4">
             <div className="animate-idle-float inline-block">
-              <Link href="/despacho-contenedores" className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-brand-teal hover:bg-[#008f84] text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-brand-teal/40 hover:shadow-xl hover:scale-105 active:scale-95">
+              <Link href="/revision-pre-importacion" className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-brand-teal hover:bg-[#008f84] text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-brand-teal/20 hover:shadow-brand-teal/40 hover:shadow-xl hover:scale-105 active:scale-95">
                 Volver al inicio
                 <svg className="w-4 h-4 transform -translate-x-0.5 group-hover:-translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />

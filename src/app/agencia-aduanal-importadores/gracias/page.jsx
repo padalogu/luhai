@@ -12,9 +12,19 @@ export default function TuOperacionGraciasPage() {
   }, []);
 
   useEffect(() => {
-    if (mounted && typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("config", "AW-16709333097", {
+    if (mounted && typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      const gtagFn = window.gtag || gtag;
+      gtagFn("config", "AW-16709333097", {
         page_path: window.location.pathname,
+      });
+      gtagFn("event", "conversion", {
+        send_to: "AW-16709333097/WrCVCOX8y9UcEOng0J8-",
+        value: 1.0,
+        currency: "MXN",
       });
     }
   }, [mounted]);
